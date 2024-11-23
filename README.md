@@ -9,3 +9,10 @@ It can be deployed on any node to capture remote interactions. A cluster deploym
 1) Install Node.js
 2) Run `npm install` from root folder
 3) Basic launch via `npm start` or cluster launch via `pm2 start`
+
+## Client capture
+### Web-apps
+you can find in public/examples/ folder how to use Kapto client component to track interactions directly from web-apps, in a very simple manner.
+
+### Integrations
+You can find in integrations/ folder integrations with other engines or desktop platforms, for instance Unreal Engine 5
