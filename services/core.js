@@ -44,7 +44,7 @@ Core.convertMBToBytes = (v)=>{
     return parseInt(1000000 * v);
 };
 
-Core.generateYMD = ()=>{
+Core.generateYMD = ( bHM )=>{
     let today = new Date();
     let dd   = String( today.getDate() );
     let mm   = String( today.getMonth()+1 ); 
@@ -52,12 +52,24 @@ Core.generateYMD = ()=>{
     if(dd<10) dd = '0'+dd;
     if(mm<10) mm = '0'+mm;
 
-    return yyyy+"-"+mm+"-"+dd;
+    let R = yyyy+"-"+mm+"-"+dd;
+
+    if (bHM){
+        let hh = String( today.getHours() );
+        let mm = String( today.getMinutes() );
+
+        if (hh<10) hh = '0'+hh;
+        if (mm<10) mm = '0'+mm;
+
+        R = R + "-"+hh+"-"+mm;
+    }
+
+    return R;
 };
 
 Core.generateSessionID = ()=>{
     let sesid = nanoid(10);
-    sesid = Core.generateYMD() + "_" + sesid;
+    sesid = Core.generateYMD(true) + "_" + sesid;
     
     return sesid;
 };

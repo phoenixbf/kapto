@@ -16,13 +16,13 @@
 
 <title>Time-driven sample</title>
 
-<script type="text/javascript" src="../capture.js"></script>
+<script type="text/javascript" src="../kapto.js"></script>
 <script>
 let px,py;
 
-// Search in url params for remote address of the CaptureHub, if not found assumes it is local server.
+// Search in url params for remote address of the Kapto, if not found assumes it is local server.
 let urlparams = new URLSearchParams( window.location.search );
-if (urlparams.get("a")) CaptureHub.setHubServer(urlparams.get("a"));
+if (urlparams.get("a")) Kapto.setHubServer(urlparams.get("a"));
 
 // Listen mouse coords
 window.addEventListener('mousemove', (event) => {
@@ -30,7 +30,7 @@ window.addEventListener('mousemove', (event) => {
     py = event.clientY;
 
     // We craft frames on mouseevents
-    CaptureHub.frame({
+    Kapto.frame({
         x: px,
         y: py
     });

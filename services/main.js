@@ -38,5 +38,5 @@ if (Core.conf.proxies){
 }
 
 http.createServer(app).listen(PORT, ()=>{
-	console.log("CaptureHub up and running on port: "+PORT);
+	console.log("Kapto is up and running on port: "+PORT);
 });

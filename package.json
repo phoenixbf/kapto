@@ -1,5 +1,5 @@
 {
-  "name": "capturehub",
+  "name": "kapto",
   "version": "1.0.0",
   "description": "",
   "main": "services/main.js",
@@ -10,11 +10,11 @@
   "author": "Bruno Fanini (CNR ISPC)",
   "license": "LGPL-3.0-or-later",
   "dependencies": {
-    "body-parser": "^1.20.2",
+    "body-parser": "^1.20.3",
     "cors": "^2.8.5",
-    "express": "^4.21.0",
+    "express": "^4.21.1",
     "fast-glob": "^3.3.2",
-    "http-proxy-middleware": "^3.0.0",
+    "http-proxy-middleware": "^3.0.3",
     "make-dir": "^4.0.0",
     "nanoid": "3.3.4",
     "path": "^0.12.7",

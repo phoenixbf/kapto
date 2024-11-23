@@ -5,8 +5,8 @@
 
     "info": {
         "version": "1.0.0",
-        "title": "CaptureHub API",
-        "description": "This is the REST API for CaptureHub service, developed under H2IOSC project as part of task 7.7 (Immersive Analytics Hub). The service allows remote devices, labs, research nodes, online web-applications or public exhibits to track interactive sessions. The initial request allows to define custom attributes: if successful, a session ID is returned to client.",
+        "title": "Kapto API",
+        "description": "This is the REST API for Kapto service, developed under H2IOSC project as part of task 7.7 (Immersive Analytics Hub). The service allows remote devices, labs, research nodes, online web-applications or public exhibits to track interactive sessions. The initial request allows to define custom attributes: if successful, a session ID is returned to client.",
 
         "contact": {
             "name": "Bruno Fanini"
