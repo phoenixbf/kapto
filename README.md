@@ -12,7 +12,7 @@ It can be deployed on any node to capture remote interactions. A cluster deploym
 
 ## Client capture
 ### Web-apps
-you can find in public/examples/ folder how to use Kapto client component to track interactions directly from web-apps, in a very simple manner.
+you can find in public/examples/ folder how to setup and use Kapto client component to track interactions directly from web-apps, using a remote Kapto service.
 
 ### Integrations
 You can find in integrations/ folder integrations with other engines or desktop platforms, for instance Unreal Engine 5

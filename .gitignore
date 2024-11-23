@@ -131,4 +131,5 @@ dist
 
 
 records/
+public/api-docs-client/
 config.json

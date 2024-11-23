@@ -1,3 +1,13 @@
+/*
+	Kapto client component
+    author: Bruno Fanini (CNR ISPC)
+
+===============================================*/
+
+/**
+Kapto
+@namespace Kapto
+*/
 let Kapto = {};
 window.Kapto = Kapto;
 

@@ -20,7 +20,7 @@
 <script>
 let px,py;
 
-// Search in url params for remote address of the Kapto, if not found assumes it is local server.
+// Search in url params for remote address of Kapto service, if not found assumes it is local server.
 let urlparams = new URLSearchParams( window.location.search );
 if (urlparams.get("a")) Kapto.setHubServer(urlparams.get("a"));
 

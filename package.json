@@ -5,13 +5,14 @@
   "main": "services/main.js",
   "scripts": {
     "start": "node services/main.js",
-    "build-apidoc": "apidoc -c apidoc.json -i ./services/ -o ./public/docs/"
+    "build-apidoc-client": "jsdoc -c ./jsdoc-client.json"
   },
   "author": "Bruno Fanini (CNR ISPC)",
   "license": "LGPL-3.0-or-later",
   "dependencies": {
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
+    "docdash": "^2.0.2",
     "express": "^4.21.1",
     "fast-glob": "^3.3.2",
     "http-proxy-middleware": "^3.0.3",

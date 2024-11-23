@@ -1,0 +1,56 @@
+{
+    "plugins": [
+        "plugins/markdown"
+    ],
+    "recurseDepth": 10,
+    "source": {
+        "include": ["./public/"],
+        "includePattern": ".+\\.js(doc|x)?$",
+        "excludePattern": "(^|\\/|\\\\)_"
+    },
+    "_sourceType": "module",
+    "tags": {
+        "allowUnknownTags": true,
+        "dictionaries": ["jsdoc","closure"]
+    },
+    "templates": {
+        "referenceTitle": "Kapto",
+        "systemName": "Kapto API",
+        "cleverLinks": false,
+        "monospaceLinks": false,
+        "_systemLogo": "./public/res/logo.png",
+        "systemSummary": "Kapto is being developed under H2IOSC project as part of task 7.7 (Immersive Analytics Hub). The service allows remote devices, labs, research nodes, online web-applications or public exhibits to track interactive sessions. This is documentation for Kapto client component.",
+        "search": true,
+        "outputSourceFiles": false,
+        "outputSourcePath": false
+    },
+
+    "docdash": {
+        "search": true,
+        "collapse": true,
+        "_commonNav": true,
+        "_scripts": ["../../res/css/docdash.css"],
+        "menu": {
+            "GitHub": {
+                "href":"https://github.com/phoenixbf/kapto",
+                "target":"_blank",
+                "class":"menu-item",
+                "id":"github"
+            }
+        },
+        "meta": {
+            "title": "Kapto API",
+            "description": "Kapto (CNR ISPC) API for developers",
+            "keyword": "Web3D WebXR nodejs 3D Tracking Analytics"
+        }
+    },
+
+    "opts": {
+        "destination": "./public/api-docs-client/",
+        "template": "node_modules/docdash",
+        "recurse": true,
+        "verbose": true,
+        "encoding": "utf8",
+        "_readme": "./services/tools/API.md"
+    }
+}
