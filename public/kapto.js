@@ -143,6 +143,8 @@ Kapto.stop = ()=>{
     
     Kapto._bRec = false;
     Kapto._bFirstRow = true;
+
+    window.clearInterval(Kapto._uf);
     Kapto._uf = undefined;
 
     console.log("STOP");
