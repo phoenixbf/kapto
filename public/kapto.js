@@ -16,7 +16,8 @@ Kapto.CHUNK_SIZE = 30
 
 Kapto._addr = undefined;
 
-Kapto.onFrame = undefined;
+Kapto.onFrame     = undefined;
+Kapto.onSessionID = undefined;
 
 Kapto.init = ()=>{
 /*
@@ -99,7 +100,9 @@ Kapto.setDataChunkSize = (size)=>{
 
 
 Kapto.requestNewSession = (fields)=>{
-    let gid = Kapto._gid;
+    Kapto._id = undefined;
+    
+    //let gid = Kapto._gid;
     //console.log(gid)
 
     Kapto._bReqSes = true;
@@ -119,10 +122,12 @@ Kapto.requestNewSession = (fields)=>{
     .then((json) => {
         console.log(json)
 
-        Kapto._id = json.id;
+        Kapto._id  = json.id;
         Kapto._gid = json.groupid;
 
         Kapto._bReqSes = false;
+
+        if (Kapto.onSessionID) Kapto.onSessionID(Kapto._id);
     });
 
     return Kapto;
@@ -245,8 +250,8 @@ Kapto.frame = (S)=>{
     }
 
     if (!Kapto._id){
-        Kapto._bFirstRow = true;
-        console.log("ERROR: no valid session ID");
+        //Kapto._bFirstRow = true;
+        //console.log("ERROR: no valid session ID");
         return Kapto;
     }
 
