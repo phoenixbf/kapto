@@ -1,9 +1,8 @@
 module.exports = {
 
     apps: [
-      // Main service (gateway)
       {
-        name          : 'CaptureHub Main Service',
+        name          : 'Kapto Main Service',
         script        : 'services/main.js',
         instances     : 'max',
         exec_mode     : 'cluster',
