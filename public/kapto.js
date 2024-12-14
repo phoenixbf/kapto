@@ -168,6 +168,19 @@ Kapto.setOnFrame = (of)=>{
 };
 
 /**
+Set onSessionID routine
+@param {Function} of - onSessionID routine to execute on ID assigned
+@example
+Kapto.setOnSessionID((sesid)=>{
+    console.log(sesid);
+});
+*/
+Kapto.setOnSessionID = (of)=>{
+    Kapto.onSessionID = of;
+    return Kapto;
+};
+
+/**
 Set group ID
 @param {String} gid - group ID (e.g.: "experiment1", "scene3")
 */
