@@ -18,6 +18,7 @@ Kapto._addr = undefined;
 
 Kapto.onFrame     = undefined;
 Kapto.onSessionID = undefined;
+Kapto.onDataChunk = undefined;
 
 Kapto.init = ()=>{
 /*
@@ -181,6 +182,19 @@ Kapto.setOnSessionID = (of)=>{
 };
 
 /**
+Set onDataChunk routine
+@param {Function} of - onDataChunk routine to execute when a datachunk is sent
+@example
+Kapto.setOnDataChunk((data)=>{
+    console.log(data);
+});
+*/
+Kapto.setOnDataChunk = (of)=>{
+    Kapto.onDataChunk = of;
+    return Kapto;
+};
+
+/**
 Set group ID
 @param {String} gid - group ID (e.g.: "experiment1", "scene3")
 */
@@ -228,6 +242,8 @@ Kapto._sendDataChunk = ()=>{
         Kapto._bSendingChunk = false;
         //console.log("Chunk sent: "+sdata);
         console.log("Datachunk sent");
+
+        if (Kapto.onDataChunk) Kapto.onDataChunk(json);
     });
 };
 
