@@ -6,5 +6,5 @@ This is a base blueprint to capture generic actors interactions in Unreal Engine
 - `HttpBlueprint`
 - `JSON Blueprint Utilities`
 
-2) Copy `BP_Kapto.uasset` in your UE5 project `Content/` folder
-3) Open your UE5 project, then drag&drop `BP_Kapto` into your level and configure its parameters
+2) Copy `Kapto` folder in your UE5 project `Content/` folder
+3) Open your UE5 project, browse to Kapto folder, then drag&drop `BP_Kapto` into your level and configure its parameters
