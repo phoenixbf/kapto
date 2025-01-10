@@ -42,7 +42,7 @@ const opts = {
 
 	//explorer: true,
 	//customCss: theme.getBuffer('dark')
-	//customCssUrl: "./public/hub.css"
+	//customCssUrl: "./public/res/kapto.css"
 };
 
 

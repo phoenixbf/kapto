@@ -5,6 +5,7 @@
     "recurseDepth": 10,
     "source": {
         "include": ["./public/"],
+        "exclude": ["./public/res/"],
         "includePattern": ".+\\.js(doc|x)?$",
         "excludePattern": "(^|\\/|\\\\)_"
     },

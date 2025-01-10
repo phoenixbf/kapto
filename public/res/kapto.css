@@ -1,0 +1,11 @@
+/*
+    Kapto CSS
+================*/
+
+.kapto-logo-landscape {
+    width: 70%;
+    height: auto;
+
+    max-width: 600px;
+    min-width: 250px;
+}
