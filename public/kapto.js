@@ -257,7 +257,8 @@ Kapto._tick = ()=>{
 };
 
 /**
-Record a given frame. Should be used in event-driven scenarios (not using onFrame ticking)
+Record a given frame (interaction state composed by multiple attributes).
+Should be used in event-driven scenarios (when not using onFrame ticking)
 @param {Object} S - State
 @example
 Kapto.frame({
